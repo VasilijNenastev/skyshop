@@ -21,6 +21,7 @@ public class ShopController {
         this.searchService = searchService;
     }
 
+
     @GetMapping("/products")
     public Collection<Product> getAllProducts() {
         return storageService.getProductMap().values();
